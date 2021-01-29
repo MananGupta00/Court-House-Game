@@ -55,9 +55,48 @@
   height: 270px;
   width: 60px;
 }
+#Dlawyer {
+  opacity: 1;
+  position: absolute;
+  top: 415px;
+  left: 270px;
+  background: url(../images/lawyer1sitting2.png);
+  background-size: 100%;
+  width: 120px;
+  height: 300px;
+}
+#Plawyer {
+  opacity: 1;
+  position: absolute;
+  top: 415px;
+  left: 514px;
+  background: url(../images/lawyer2sitting.png);
+  background-size: 100%;
+  width: 120px;
+  height: 300px;
+}
+#Dlawyer1 {
+  opacity: 1;
+  position: absolute;
+  top: 425px;
+  left: 202px;
+  background: url(../images/ladyLawyer.png);
+  background-size: 100%;
+  width: 80px;
+  height: 100px;
+}
+#Plawyer1 {
+  opacity: 1;
+  position: absolute;
+  top: 425px;
+  left: 640px;
+  background: url(../images/ladyLawyer2.png);
+  background-size: 100%;
+  width: 80px;
+  height: 100px;
+}
 
 /*dialogue css*/
-
 p {
   text-align: center;
   padding: 2%;

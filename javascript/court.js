@@ -37,7 +37,7 @@ async function start() {
     increaseOpacity(judge3, 0.007);
     increaseOpacity(judge1, 0.003);
     scene++;
-  }, 3000);
+  }, 2000);
   await wait(3000);
 }
 
