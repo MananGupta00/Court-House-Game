@@ -29,10 +29,18 @@ async function story() {
         display_dialog(
         plawyer_stand,
           "I would like to call upon the accused, Mr. William Moore",
-          5000);
-      }, 3000);
+          4000);
+      }, 2500);
+      await wait(4000);
+      //scene++;
+      story();
+      break;
+case 11:
+      //scene 10, writer calls accused
+      setTimeout( function(){
+      display_dialog(writer, "Mr. William Moore, come up in the witness box", 5000)},7500);
+      await wait(7500);
       scene++;
       story();
-      
-  }
+   }
 }
