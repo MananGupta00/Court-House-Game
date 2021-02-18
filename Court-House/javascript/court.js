@@ -14,7 +14,7 @@ var dialog = document.getElementById("dialog");
 var audio = document.getElementById("audio");
 var bg = document.getElementById("bgCourt");
 var tv = document.getElementById("tv");
-var scene = 9;
+var scene = 1;
 
 increaseOpacity(bg, 0.005);
 start();

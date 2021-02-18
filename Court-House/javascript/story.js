@@ -15,32 +15,46 @@ function startstory(no) {
   scene = no;
   story();
 }
-async function story() {
+function story() {
   console.log("scene: ", scene);
-  switch (scene) {
-    case 9:
-      //scene 06, Plawyer calls upon accused
-      await wait(1000);
-      setTimeout( function(){
-      display_dialog(plawyer_stand, "Thank you, your honor", 3000)},00);
-      await wait(3000);
 
-      setTimeout(function () {
-        display_dialog(
-        plawyer_stand,
-          "I would like to call upon the accused, Mr. William Moore",
-          4000);
-      }, 2500);
-      await wait(4000);
-      //scene++;
-      story();
-      break;
-case 11:
-      //scene 10, writer calls accused
-      setTimeout( function(){
-      display_dialog(writer, "Mr. William Moore, come up in the witness box", 5000)},7500);
-      await wait(7500);
-      scene++;
-      story();
-   }
+  // Queue template
+  // function scene08() {
+  //   {
+  //     //code BLOCK
+  //   }
+  //   setTimeout(
+  //     //next scene link
+  //   , 4000);
+  // }
+
+  function scene12() {
+    console.log("ended", scene);
+  }
+  function scene11() {
+    display_dialog(
+      writer,
+      "Mr. William Moore, come up in the witness box",
+      5000
+    );
+    console.log(scene++);
+    setTimeout(scene12, 10000);
+  }
+  function scene10() {
+    display_dialog(
+      plawyer_stand,
+      "I would like to call upon the accused, Mr. William Moore",
+      4000
+    );
+    console.log(scene++);
+    setTimeout(scene11, 8000);
+  }
+
+  function scene09() {
+    display_dialog(plawyer_stand, "Thank you, your honor", 2500);
+    console.log(scene++);
+    setTimeout(scene10, 6000);
+  }
+
+  setTimeout(scene09, 1000);
 }
